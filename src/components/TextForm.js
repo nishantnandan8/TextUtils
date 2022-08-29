@@ -5,11 +5,13 @@ export default function TextForm(props) {
         // console.log("uppercase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText);
+        props.showalert("coverted to Uppercase","success");
     }
     const handlelowclick = ()=>{
         // console.log("uppercase was clicked" + text);
         let newText = text.toLocaleLowerCase();
         setText(newText);
+        props.showalert("coverted to Lowercase","success");
     }
     const handleOnChange = (Event)=>{
         // console.log("on change");
@@ -18,7 +20,7 @@ export default function TextForm(props) {
   const [text, setText] = useState('');
   return (
       <>
-    <div className='container' style={{color: props.mode==="dark"?'white':'black'}}>
+    <div className='container' style={{color: props.mode==="light"?'black':'white'}}>
         <h1> {props.heading} </h1>
         <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==="dark"?'grey':'white' , color:props.mode==="light"?'black':'white' }} id=" mybox " rows="8"></textarea>
