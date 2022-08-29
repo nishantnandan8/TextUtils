@@ -46,7 +46,7 @@ function App() {
       <Navbar title='TextUtils' mode={mode} togglemode={togglemode} />
       <Alert alert={alert} />
       <div className='container my-3'>
-
+            {/* ffhfhgfhdhg  */}
         {/* <Switch>
           <Route exact path="/about">
             <About />
