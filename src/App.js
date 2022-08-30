@@ -14,7 +14,7 @@ import TextForm from './components/TextForm';
 // } from "react-router-dom";
 
 function App() {
-  const [mode, setmode] = useState('dark');
+  const [mode, setmode] = useState('light');
   const [alert, setalert] = useState(null);
 
   const showalert = (message, type) => {
